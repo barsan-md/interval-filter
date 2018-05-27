@@ -1,0 +1,6 @@
+name: Interval Filter
+description: A custom filter to combine two fields as an interval.
+package: Custom
+type: module
+version: 1.0
+core: 8.x
