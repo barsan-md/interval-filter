@@ -142,6 +142,7 @@ class IntervalFilter extends FilterPluginBase {
       // it is not necessary to controll nullity
       $condition->condition($min, $this->value, $opMin);
       $condition->condition($max, $this->value, $opMax);
+      $condition->condition((new Condition('AND'))->isNull($min)->isNull($max));
     }
     
     $this->query->addWhere($this->options['group'], $condition);
