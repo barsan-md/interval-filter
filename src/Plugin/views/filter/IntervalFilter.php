@@ -154,9 +154,8 @@ class IntervalFilter extends FilterPluginBase {
    * @see FilterPluginBase::operatorOptions()
    */
   public function operatorOptions() {
-    $options = [
+    return [
       self::CONTAINS => $this->t('Contains'),
       self::NOT_CONTAINS => $this->t('Does not contain')];
-    return $options;
   }
 }
