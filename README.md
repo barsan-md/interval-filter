@@ -1,6 +1,8 @@
+![Security](https://sonarcloud.io/api/project_badges/measure?project=internal-filter&metric=security_rating) ![Readability](https://sonarcloud.io/api/project_badges/measure?project=internal-filter&metric=reliability_rating) ![Mantainability](https://sonarcloud.io/api/project_badges/measure?project=internal-filter&metric=sqale_rating)
+
 # interval-filter
 
-This is a module for the [Drupal](https://www.drupal.org/) CMS that adds a custom filter. It will allow you to customize views with the concept of **interval** (or range). An interval is defined by a pair of fields representing the interval bounds.
+This is a module for the [Drupal](https://www.drupal.org/) CMS that adds a custom filter. It will allow you to customize views with the concept of **interval** (range). An interval is defined by a pair of fields representing the interval bounds.
 
 The type of fields to be used as bounds are intentionally left unrestricted so that it can hopefully work in a wide variety of scenarios. The rule is: if it behaves correctly in the SQL context when applied to operators: `<`, `<=`, `>`, `>=`; then it will work as expected.
 
@@ -16,3 +18,6 @@ The type of fields to be used as bounds are intentionally left unrestricted so t
 The filter works as follows: It will check if the choosed value belongs (or not, depending on the operator) to the interval bounded by MIN and MAX. The fields MIN and MAX can also be *null*, this means that the interval is unbounded (either left or right or both).
 
 **Example:** an item has MIN field = 100 and MAX field null. If value ≥ 100 and operator is *contains*, it will show that item.
+
+## SonarQube Analysis
+https://sonarcloud.io/dashboard?id=internal-filter
