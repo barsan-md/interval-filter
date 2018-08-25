@@ -2,7 +2,7 @@
 
 # interval-filter
 
-This is a module for the [Drupal](https://www.drupal.org/) CMS that adds a custom filter. It will allow you to customize views with the concept of **interval** (range). An interval is defined by a pair of fields representing the interval bounds.
+This is a module for the [Drupal](https://www.drupal.org/) 8 CMS that adds a custom filter. It will allow you to customize views with the concept of **interval** (range). An interval is defined by a pair of fields representing the interval bounds.
 
 The type of fields to be used as bounds are intentionally left unrestricted so that it can hopefully work in a wide variety of scenarios. The rule is: if it behaves correctly in the SQL context when applied to operators: `<`, `<=`, `>`, `>=`; then it will work as expected.
 
